@@ -1,0 +1,37 @@
+﻿hi : hi, how can I help you
+hello : hello, How can I assist you today?
+good morning : good morning! How can I assist you today?
+good afternoon : good afternoon! How can I assist you today?
+good evening : good evening! How can I assist you today?
+what time is it : it is -time-
+what is your name : I am your voice assistant
+how are you : I am just a program, but I am functioning properly
+what is the date today : today is -datetoday- 
+what is the weather like : I cannot check the weather right now, but you can use a weather app for that
+tell me a joke : Why don't scientists trust atoms? Because they make up everything!
+open notepad : opening notepad
+open calculator : opening calculator
+who is the president of the United States : the president of the United States is Joe Biden
+how old are you : I was created recently, so I am quite young
+what is the capital of France : the capital of France is Paris
+who created you : I was created by Sanjar Akhmedov.
+can you help me : of course! What do you need help with?
+what's up : Not much, just here to help you. How can I assist you?
+who are you : I am your virtual assistant, here to help you with any questions or tasks.
+set a timer for 5 minutes : setting a timer for 5 minutes
+remind me to call mom at 3 PM : setting a reminder to call mom at 3 PM
+how do I cook pasta : Boil water, add salt, add pasta, cook until al dente, then drain and serve.
+what is the speed of light : The speed of light is approximately 299,792 kilometers per second.
+how do I get to the nearest gas station : Please provide your current location, and I can help you with directions.
+play some music : opening your music app
+turn off the lights : I'm unable to control your lights directly, but you can use a smart home app to do that.
+how tall is the Eiffel Tower : The Eiffel Tower is approximately 330 meters tall.
+what is the largest planet in our solar system : The largest planet in our solar system is Jupiter.
+how can I learn a new language : You can use language learning apps like Duolingo, Babbel, or Rosetta Stone.
+what is 2 plus 2 : 2 plus 2 is 4.
+what is the smallest country in the world : The smallest country in the world is Vatican City.
+who painted the Mona Lisa : The Mona Lisa was painted by Leonardo da Vinci.
+how far is the moon : The average distance from Earth to the Moon is about 384,400 kilometers.
+what's the population of the United States : The population of the United States is approximately 331 million people.
+what is AI : Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.
+what is the capital of Japan : The capital of Japan is Tokyo.

@@ -8,8 +8,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Title="Speech Recognition App">
-
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,7 +15,6 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
         <TextBox
             x:Name="RecognizedTextBox"
             Margin="10"
@@ -26,42 +23,34 @@
             IsReadOnly="True"
             ScrollViewer.VerticalScrollBarVisibility="Auto"
             PlaceholderText="Recognized text will appear here..."/>
-
         <StackPanel
-            Orientation="Horizontal"
+            Orientation="Vertical"
             Grid.Row="1"
             Margin="10"
             HorizontalAlignment="Left"
             VerticalAlignment="Center">
-
-            <StackPanel Orientation="Vertical"
-                Margin="10"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
-                <TextBlock Text="Voice Settings:" Margin="5"/>
-                <TextBlock Text="Select Voice:" Margin="5"/>
-                <ComboBox x:Name="VoiceComboBox" Width="200" Margin="5"/>
-
-                <TextBlock Text="Select Gender:" Margin="5"/>
-                <ComboBox x:Name="GenderComboBox" Width="200" Margin="5">
-                    <ComboBoxItem Content="Male" />
-                    <ComboBoxItem Content="Female" />
-                </ComboBox>
-            </StackPanel>
-
-            <StackPanel Orientation="Vertical"
-                Margin="10"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
-                <TextBlock Text="Voice Speed:" Margin="5"/>
-                <Slider x:Name="VoiceSpeedSlider" Minimum="0" Maximum="2" Value="1" TickFrequency="0.1" Width="200" Margin="5"/>
-
-                <TextBlock Text="Recognition Settings:" Margin="5"/>
-                <TextBlock Text="Confidence Level:" Margin="5"/>
-                <Slider x:Name="ConfidenceSlider" Minimum="0" Maximum="1" Value="0.8" TickFrequency="0.1" SnapsTo="Ticks" Width="200" Margin="5"/>
+            <TextBlock Text="Voice Settings:" Margin="25 5 5 5"/>
+            <StackPanel Orientation="Horizontal"
+                    Margin="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Select Voice:" Margin="5"/>
+                    <ComboBox x:Name="VoiceComboBox" Width="200" Margin="5" SelectionChanged="VoiceSettingsChanged"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Select Gender:" Margin="5"/>
+                    <ComboBox x:Name="GenderComboBox" Width="200" Margin="5" SelectionChanged="VoiceSettingsChanged">
+                        <ComboBoxItem Content="Male" IsSelected="True"/>
+                        <ComboBoxItem Content="Female" />
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Voice Speed:" Margin="5"/>
+                    <Slider x:Name="VoiceSpeedSlider" Minimum="0" Maximum="2" Value="1" TickFrequency="0.1" SnapsTo="Ticks" Width="200" Margin="5" ValueChanged="VoiceSettingsSpeedValueChanged"/>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
-
         <ListBox
             x:Name="RecognizedPhrasesListBox"
             Margin="10"
